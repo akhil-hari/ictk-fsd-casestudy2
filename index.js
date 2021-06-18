@@ -229,7 +229,7 @@ app.get("/signup",(req,res)=>{
     });
 });
 
-app.post('/adduser',(req,res)=>{
+app.post('/adduser',uploadImage.none(),(req,res)=>{
     bookData.insert
 
     let item={
